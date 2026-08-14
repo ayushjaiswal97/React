@@ -1,5 +1,5 @@
-const name = "Ayush";
+function user(){
+     return "Sarthak Sharma"
+}
 
-export const age = 12;
-
-export default name;
+export default user;
