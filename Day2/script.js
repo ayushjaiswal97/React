@@ -1,3 +1,2 @@
-import user from "./app.js";
-
-console.log(user());
+console.log(React);
+console.log(ReactDOM);
