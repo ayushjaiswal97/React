@@ -1,7 +1,4 @@
-function h1(){
-   return React.createElement('h1', null, 'This is h1 from React using function');  
- 
-}
+import h1 from "./app.js";
 
 var root = ReactDOM.createRoot(document.querySelector('#root'));
 
