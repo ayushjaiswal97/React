@@ -1,5 +1,5 @@
-import h1 from "./app.js";
+import parent from "./parent.js";
 
 var root = ReactDOM.createRoot(document.querySelector('#root'));
 
-root.render(h1());
+root.render(parent());

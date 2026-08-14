@@ -1,8 +1,4 @@
-function h1() {
-  return React.createElement(
-    "h1",
-    null,
-    "This is h1 from React using function",
-  );
-}
-export default h1;
+const box = () => {
+  return React.createElement("div", { id: "box" }, "This is box");
+};
+export default box;
