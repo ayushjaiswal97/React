@@ -1,5 +1,5 @@
-const h1 = document.createElement('h1');
+const h1 =  React.createElement('h1', null, "Hello from React");
 
-h1.innerHTML = "Hello from JS";
+const root = ReactDOM.createRoot(document.querySelector('#root'));
 
-document.body.appendChild(h1)
+root.render(h1)
