@@ -1,8 +1,8 @@
-const h1 =  React.createElement('h1', null, "This is h1 tag");
-const h2 =  React.createElement('h2', null, "This is h2 tag");
+function h1(){
+   return React.createElement('h1', null, 'This is h1 from React using function');  
+ 
+}
 
-const div = React.createElement('div', {id: "parent"}, [h1,h2]);
+var root = ReactDOM.createRoot(document.querySelector('#root'));
 
-const root = ReactDOM.createRoot(document.querySelector('#root'));
-
-root.render(div)
+root.render(h1());
