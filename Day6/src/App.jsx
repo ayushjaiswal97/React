@@ -1,13 +1,14 @@
-import Button from "./components/Button";
 import Card from "./components/Card";
 
 const App = () => {
+
+  const users = ["Ayush", "Aman", "Pintu", "Manish"]
+
   return (
-    <div className='p-10 bg-black h-screen'>
-     <Card user="Ayush" age={22}/>
-     <Card user="Rahul" age={23}/>
-     <Button text="Explore"/>
-     <Button text="Buy Now"/>
+    <div className='p-10 text-white bg-black h-screen'>
+     {users.map((ele, id)=>{
+      return <Card users={ele} key={id}/>
+     })}
     </div>
   );
 };
