@@ -1,14 +1,12 @@
 
 const App = () => {
 
-  const name = "Ayush";
-  const age = 22;
-  const arr = ["Ayush","Chandu","Rahul","Ritik"];
+  const arr = [10,20,30,40];
 
   return (
     <div>
-     {arr.map(function(ele){
-      return <h1>{ele}</h1>
+     {arr.filter(function(ele){
+      return ele <= 30
      })}
     </div>
   )
