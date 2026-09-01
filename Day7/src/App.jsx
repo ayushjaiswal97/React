@@ -1,22 +1,21 @@
-import Men from "./components/Men";
-import Navbar from "./components/Navbar";
-import Women from "./components/Women";
+import React from "react";
 
 const App = () => {
-  const user1 = {
-    name : "Ayush",
-    age : 22,
-    gender : "male"
-  }
-  const user2 = {
-    name : "Manisha",
-    age : 26,
-    gender : "female"
-  }
+  const btnClick = () => {
+    console.log("Clicked to download");
+  };
 
-  return <div>
-   {user1.gender == 'male' ? <Men /> : <Women/>}
-  </div>;
+  return (
+    <div>
+      <button
+        onClick={()=>{
+          btnClick()
+        }}
+        className="active:scale-95 cursor-pointer bg-emerald-500 text-white px-6 py-3 rounded m-2">
+        Click to download
+      </button>
+    </div>
+  );
 };
 
 export default App;
