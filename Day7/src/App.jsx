@@ -1,13 +1,22 @@
-import Navbar from "./components/Navbar"
+import Men from "./components/Men";
+import Navbar from "./components/Navbar";
+import Women from "./components/Women";
 
 const App = () => {
-  return (
-    <div>
-      <Navbar title="Bixi" color="red" links={['Home', 'About', 'Account', 'Contact']}/>
-      <Navbar title="Akash" color="blue" links={['Home', 'Services', 'Courses', 'Contact']}/>
-      <Navbar title="Ayush" color="green" links={['Home', 'Product', 'Men', 'Women']}/>
-    </div>
-  )
-}
+  const user1 = {
+    name : "Ayush",
+    age : 22,
+    gender : "male"
+  }
+  const user2 = {
+    name : "Manisha",
+    age : 26,
+    gender : "female"
+  }
 
-export default App
+  return <div>
+   {user1.gender == 'male' ? <Men /> : <Women/>}
+  </div>;
+};
+
+export default App;
