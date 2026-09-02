@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const App = () => {
+  const arr = ["Ayush", "Akash", "Manish", "Bikash"];
 
-  const [num, setNum] = useState(0)
-
+  const [user, setUser] = useState(0);
   return (
     <div>
-      <div className="box">
-        {num}
-      </div>
-      <button onClick={()=>{
-        const rdm = Math.floor(Math.random()*100);
-        setNum(rdm);
-      }}>Click here</button>
+      <h1>{arr[user]}</h1>
+      <button
+        onClick={() => {
+          if (user < arr.length - 1) setUser(user + 1);
+        }}>
+        Change User
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
