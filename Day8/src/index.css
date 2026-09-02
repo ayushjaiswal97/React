@@ -12,6 +12,10 @@ html , body{
     width: 100%;
 }
 
-body{
-     padding: 10px;
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: lightseagreen;
+  margin-bottom: 10px; 
+  font-size: 100px; 
 }
