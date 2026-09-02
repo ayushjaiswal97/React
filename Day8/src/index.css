@@ -19,3 +19,16 @@ html , body{
   margin-bottom: 10px; 
   font-size: 100px; 
 }
+
+button{
+  padding: 15px 30px; 
+  background-color: lightseagreen;
+  color: white; 
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+button:active{
+    scale: 0.95;
+}
