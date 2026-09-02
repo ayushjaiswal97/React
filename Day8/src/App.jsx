@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Men from "./components/Men";
-import Women from "./components/Women";
+import Washroom from "./components/Washroom";
 
 const App = () => {
   const [gender, setGender] = useState("Male");
@@ -8,6 +7,8 @@ const App = () => {
   function changeGender() {
     if (gender == "Male") {
       setGender("Female");
+    } else if(gender == 'Female'){
+      setGender('Others')
     } else {
       setGender("Male");
     }
@@ -15,9 +16,9 @@ const App = () => {
 
   return (
     <div className="parent">
-      <h1>{gender}</h1>
+      <h1>Your gender is ~ {gender}</h1>
       <button onClick={changeGender}>Change gender</button>
-      {gender == 'Male' ? <Men /> : <Women/>}
+      <Washroom user={gender}/>
 
     </div>
   );

@@ -52,7 +52,6 @@ button:active {
   font-weight: 600;
 }
 
-
 .women {
   width: fit-content;
   padding: 20px 30px;
@@ -62,4 +61,33 @@ button:active {
   margin-top: 10px;
   font-size: 30px;
   font-weight: 600;
+}
+
+.wash {
+  width: fit-content;
+  height: 300px;
+  /* width: 300px; */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.Male {
+  background-color: royalblue;
+}
+
+.Female {
+  background-color: pink;
+}
+
+.Others {
+  background: conic-gradient(violet, indigo, blue, green, yellow, orange, red, violet);
 }
