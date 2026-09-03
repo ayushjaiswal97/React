@@ -12,7 +12,14 @@ const App = () => {
       <form onSubmit={(e)=>{
         submitHandler(e)
       }}>
-        <input type="text" placeholder='Enter your name'/>
+        <input 
+        type="text" 
+        placeholder='Enter your name'
+        onChange={(e)=>{
+          console.log(e.target.value)
+        }}
+        value='harsh'
+        />
         <button>Submit</button>
       </form>
     </div>
